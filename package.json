@@ -9,17 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.5.2",
+    "@prisma/client": "5.20.0",
     "@tanstack/react-query": "^5.56.2",
     "@trpc/client": "11.0.0-rc.532",
     "@trpc/react-query": "11.0.0-rc.532",
     "@trpc/server": "11.0.0-rc.532",
+    "bcryptjs": "^2.4.3",
     "next": "14.2.13",
+    "next-auth": "5.0.0-beta.21",
+    "prisma": "^5.20.0",
     "react": "^18",
     "react-dom": "^18",
     "superjson": "^2.2.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
