@@ -5,7 +5,7 @@ const { auth } = NextAuth(authConfig);
 
 export default auth((req) => {
   const isLoggedIn = !!req.auth;
-  console.log(isLoggedIn);
+  console.log({ isLoggedIn });
 });
 
 export const config = {
