@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import TRPCProvider from "@/trpc/TRPCProvider";
+import { TRPCProvider } from "@/trpc/TRPCProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
