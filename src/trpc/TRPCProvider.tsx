@@ -6,8 +6,9 @@ import { httpBatchLink } from "@trpc/client";
 import { useState } from "react";
 
 import { makeQueryClient } from "@/server/query-client";
-import superjson from "superjson";
+
 import { trpc } from "./client";
+import SuperJSON from "superjson";
 
 let clientQueryClientSingleton: QueryClient;
 function getQueryClient() {
@@ -34,7 +35,7 @@ export function TRPCProvider(
     trpc.createClient({
       links: [
         httpBatchLink({
-          transformer: superjson,
+          transformer: SuperJSON,
           url: "/api/trpc",
         }),
       ],
